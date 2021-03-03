@@ -1,0 +1,107 @@
+.reveal-up {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+    -webkit-transition: all 0.7s ease-in-out;
+			}
+		
+.reveal-up.visible {
+    opacity: 1;
+    -webkit-transform: none;
+			}
+
+
+.reveal-left {
+    //overflow: hidden;
+				opacity: 0;
+				transform: translateX(-80px);
+	            transition: all 0.7s ease-in-out;
+			}
+			.reveal-left.visible {
+				opacity: 1;
+				transform: none;
+			}
+
+.reveal-right {
+   // overflow: hidden;
+            opacity: 0;
+            transform: translateX(80px);
+			transition: all 1s ease-in-out;
+			}
+			.reveal-right.visible {
+				opacity: 1;
+				transform: none;
+			}
+
+.fade-delay-1 {
+   // overflow: hidden;
+            opacity: 0;
+            -webkit-transform: translateY(+80px);
+			transition: all 1.5s ease-in-out;
+			}
+
+.fade-delay-2 {
+   // overflow: hidden;
+            opacity: 0;
+            -webkit-transform: translateY(+80px);
+			transition: all 1.5s ease-in-out;
+            transition-delay: 0.5s;
+			}
+
+.fade-delay-3 {
+   // overflow: hidden;
+            opacity: 0;
+            -webkit-transform: translateY(+80px);
+			transition: all 1.5s ease-in-out;
+            transition-delay: 1s;
+			}
+
+.fade-delay-4 {
+   // overflow: hidden;
+            opacity: 0;
+            -webkit-transform: translateY(80px);
+			transition: all 1s ease-in-out;
+            transition-delay: 2.5s;
+			}
+
+     
+   .fade-delay-1.visible, .fade-delay-2.visible, .fade-delay-3.visible, 
+    .fade-delay-4.visible{
+            opacity: 1;
+            -webkit-transform: translateY(0px);
+			}
+
+
+.bg-shape {
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    position: absolute;
+}
+
+.banner-text-reveal {
+        // overflow: hidden;
+		opacity: 0;
+				-webkit-transform: translateX(40px);
+			 -moz-transform: translateX(40px);
+				-ms-transform: translateX(40px);
+				 -o-transform: translateX(40px);
+						transform: translateX(40px);
+	
+								transition: all 0.7s ease-in-out;
+}
+
+.banner-text-reveal.visible {
+				opacity: 1;
+					-webkit-transform: none;
+					 -moz-transform: none;
+						-ms-transform: none;
+						 -o-transform: none;
+								transform: none;
+			}
+
+/*
+.bg-primary, .bg-content, .bg-secondary, .fill-primary, .fill-secondary, .justify-content-right, .justify-content-center {
+	-webkit-transition: all 1s ease-in-out;
+			}
+*/

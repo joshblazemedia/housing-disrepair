@@ -1,0 +1,209 @@
+.woocommerce {
+    
+    .woocommerce-input-wrapper, .variations tr{
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+    .woocommerce-error, .woocommerce-info, .woocommerce-message {
+            padding: 1em 2em 1em 3.5em;
+    margin: 0 0 2em;
+    position: relative;
+    background-color: $light;
+    color: #515151;
+    border-top: 3px solid $primary;
+    list-style: none outside;
+    width: auto;
+    word-wrap: break-word;
+    }
+    
+    .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+        
+    background-color: $primary;
+    color: '';
+    -webkit-font-smoothing: antialiased;
+    }
+
+.variations select,
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea, .woocommerce-input-wrapper input, .woocommerce-input-wrapper textarea, .woocommerce-input-wrapper textarea, .woocommerce-Reviews input, .woocommerce-Reviews textarea, .input  {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $dark;
+    background-color: $light;
+    background-clip: padding-box;
+    border: 0px;
+    border: 0.5px solid $form-input ;
+    border-radius: 2px;
+    transition: border-color 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+    padding: 10px 10px;
+    
+}
+
+
+input[type=checkbox]{
+    height: 20px;
+    display: flex;
+    min-width: 20px;
+    width: 20px;
+    float: left;
+    margin: 1px 10px 0px 0px;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+
+.woocommerce-input-wrapper input[type=submit]:hover, 
+input[type=submit] {
+    background: $secondary;
+    color: $light;
+    width: auto;
+}
+
+
+
+
+.woocommerce-Reviews input:focus,
+.woocommerce-Reviews textarea:focus,
+.woocommerce-input-wrapper textarea:focus,
+.woocommerce-input-wrapper input-text:focus, 
+.woocommerce-input-wrapper input:focus,
+.woocommerce-input-wrapper input[type="text"]:focus,
+.woocommerce-input-wrapper input[type="password"]:focus,
+.woocommerce-input-wrapper input[type="datetime"]:focus,
+.woocommerce-input-wrapper input[type="datetime-local"]:focus,
+.woocommerce-input-wrapper input[type="date"]:focus,
+.woocommerce-input-wrapper input[type="month"]:focus,
+.woocommerce-input-wrapper input[type="time"]:focus,
+.woocommerce-input-wrapper input[type="week"]:focus,
+.woocommerce-input-wrapper input[type="number"]:focus,
+.woocommerce-input-wrapper input[type="email"]:focus,
+.woocommerce-input-wrapper input[type="url"]:focus,
+.woocommerce-input-wrapper input[type="search"]:focus,
+.woocommerce-input-wrapper input[type="tel"]:focus,
+.woocommerce-input-wrapper input[type="color"]:focus,
+.uneditable-input:focus, .input:focus,
+.woocommerce-Reviews textarea:focus,
+.textarea:focus,
+.input-text:focus, 
+.input:focus,
+.input[type="text"]:focus,
+.input[type="password"]:focus,
+.input[type="datetime"]:focus,
+.input[type="datetime-local"]:focus,
+.input[type="date"]:focus,
+.input[type="month"]:focus,
+.input[type="time"]:focus,
+.input[type="week"]:focus,
+.input[type="number"]:focus,
+.input[type="email"]:focus,
+.input[type="url"]:focus,
+.input[type="search"]:focus,
+.input[type="tel"]:focus,
+.input[type="color"]:focus,
+.uneditable-input:focus {
+  -webkit-box-shadow: 0px 9px 7px -7px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 9px 7px -7px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 9px 7px -7px rgba(0, 0, 0, 0.14);
+  outline: 0 none;
+  border: 0px;
+  border-radius: 0px;
+  border-bottom: 2px solid $secondary;
+  transition: 1s; 
+   width: 100%;
+}
+
+
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: $primary;
+}
+
+
+.columns-12 {
+    width: 100%;
+}
+
+
+.cart-contents:hover {
+    text-decoration: none;
+}
+
+.cart-contents-count {
+	position: absolute;
+    top: 26px;
+   	right: -12px;
+   	transform: translateY(-105%) translateX(25%);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 22px;
+	height: 22px;
+   	width: 22px;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+    	background: #000;
+    	border-radius: 50%;
+    	padding: 1px;  
+}
+
+
+form.woocommerce-ordering {
+  // border: 1px solid black;
+      //background: $light;
+      padding: 5px;
+      width: fit-content;
+     justify-content: flex-end;
+}
+
+form.woocommerce-ordering select, select {
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+}
+
+form.woocommerce-ordering select, select {
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $dark;
+    background-color: $light;
+    background-clip: padding-box;
+    border: 0px;
+    border: 0.5px solid $form-input ;
+    border-radius: 2px;
+    transition: border-color 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+    padding: 5px 10px;
+}
+
+form.woocommerce-ordering:after {
+  content: '\2304';
+  font-size: 30px;
+  line-height: 18px;
+  padding-right: 2px;
+  position: relative;
+  color: $primary;
+  right: 30px;
+}
+
+.woocommerce .quantity .minus,
+.woocommerce .quantity .plus  {
+  padding: 18px;
+  vertical-align: super;
+  width: 100%;
+}
+
+.woocommerce .quantity input[type=number] {
+  padding: 5px;
+  vertical-align: top;
+}
