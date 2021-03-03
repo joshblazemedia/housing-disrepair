@@ -1,15 +1,27 @@
 //Bootstrap Variables
 @import "base/variables";
-//bootstrap load//
+@import "base/header";
+// bootstrap load//
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // @import "base/navigation";
-// @import "base/banner";
+@import "base/front-page";
 // @import "base/full-height-div";
 // @import "base/scroll-effects";
 // @import "base/search-form";
 // @import "base/woocommerce";
 // @import "base/buttons";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    color: $text-dark;
+}
+
+ul {
+    list-style-type: none;
+}
 
 // .image-background{background-repeat: no-repeat;
 // background-size: cover;

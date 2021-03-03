@@ -21,12 +21,14 @@ margin-bottom: 1.5rem !important;
 }
 
 // Example usage:
-$primary: #000000;
-$text: #656565;
+$primary: #25B3B7;
+$secondary: #EDF2F2; 
+$text-dark: #363636;
+$text-light: #FFFFFF;
+$accent: #BD2C88;
 $darker: #000000;
 $back: #a9a9a9;
 $content: #ffffff;
-$secondary: #30BFBB; 
 $success:#28a745;
 $danger:#FF0000;
 $info:#9BCDFA;
@@ -55,244 +57,243 @@ $theme-colors: (
 "titletext": $titletext,
 "form-input": $form-input,
 "ptitle" : $ptitle,
-"text": $text
 );
 
 // $headings-color: $primary;
 
-.radius-lg{
-    border-radius: 2rem;
-}
+// .radius-lg{
+//     border-radius: 2rem;
+// }
 
-body, #content {
-    color: $text;
-    font-size: 0.9rem;
-    line-height: 1.8;
-    font-weight: 300;
-}
+// body, #content {
+//     color: $text;
+//     font-size: 0.9rem;
+//     line-height: 1.8;
+//     font-weight: 300;
+// }
 
-.hover-block{
-    position: relative; 
-    top: 0px;
-    transition: all 0.3s ease 0.3s;
-    box-shadow: 0px 5px 10px -5px rgba(108,110,135,0.4) !important;
-&:hover {
-    top: -20px;
-    box-shadow: 0px 50px 30px -20px rgba(108,110,135,0.3) !important;
-    }
-}
-
-
-ul li {
-    margin: 4px;
-    // margin-left: 20px;
-}
+// .hover-block{
+//     position: relative; 
+//     top: 0px;
+//     transition: all 0.3s ease 0.3s;
+//     box-shadow: 0px 5px 10px -5px rgba(108,110,135,0.4) !important;
+// &:hover {
+//     top: -20px;
+//     box-shadow: 0px 50px 30px -20px rgba(108,110,135,0.3) !important;
+//     }
+// }
 
 
-ul li:first-letter {
-    // margin-bottom: 8px;
-    text-transform: capitalize;
-}
-
-.z-index-100 {
-    z-index: 100;
-    position: relative;
-}
-
-.fill-primary{
-    fill: $primary;
-}
-
-.fill-secondary{
-    fill: $secondary;
-}
-
-.fill-content{
-    fill: $content;
-}
-
-a {
- color: $ptitle;   
-}
-
-.page-numbers {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background: $light;
-}
-
-.page-numbers li{
-  padding: 1rem;
-}
-
-.page-numbers li:hover{
-  background: $primary;
-}
-
-.page-numbers li a{
-  color: $secondary;
-  background: transparent;
-}
-
-.opacity-gradient-primary {
-   background: rgba(5, 35, 41, 0) linear-gradient(180deg, rgba(5, 35, 41, 0), $primary) repeat-x !important
-}
+// ul li {
+//     margin: 4px;
+//     // margin-left: 20px;
+// }
 
 
-.opacity-gradient-secondary {
-   background: rgb(0,255,179);
-   background: linear-gradient(159deg, rgba(0,255,179,1) 15%, rgba(0,164,255,1) 85%);
-}
+// ul li:first-letter {
+//     // margin-bottom: 8px;
+//     text-transform: capitalize;
+// }
 
-.opacity-gradient-content {
-   background: rgba(255, 255, 255, 0) linear-gradient(180deg, rgba(255, 255, 255, 0), $content) repeat-x !important
-}
+// .z-index-100 {
+//     z-index: 100;
+//     position: relative;
+// }
 
-.opacity-gradient-light {
-   background: rgba(255, 255, 255, 0) linear-gradient(180deg, rgba(255, 255, 255, 0), $light) repeat-x !important
-}
+// .fill-primary{
+//     fill: $primary;
+// }
 
-.bb-glow-primary { 
-    content: url('../img/icons/primary/bb-glow.svg');
-}
+// .fill-secondary{
+//     fill: $secondary;
+// }
 
-.cellulite-primary { 
-    content: url('../img/icons/primary/cellulite.svg');
-}
+// .fill-content{
+//     fill: $content;
+// }
 
-.eye-treatment-primary { 
-    content: url('../img/icons/primary/eye-treatment.svg');
-}
+// a {
+//  color: $ptitle;   
+// }
 
-.face-cryolipolysis-primary { 
-    content: url('../img/icons/primary/cryolipolysis.svg');
-}
+// .page-numbers {
+//     display: flex;
+//     justify-content: center;
+//     list-style: none;
+//     background: $light;
+// }
 
-.skin-treatments-primary { 
-    content: url('../img/icons/primary/face-skin-treatments.svg');
-}
+// .page-numbers li{
+//   padding: 1rem;
+// }
 
-.massage-primary { 
-    content: url('../img/icons/primary/face-profile.svg');
-}
+// .page-numbers li:hover{
+//   background: $primary;
+// }
 
-.hair-primary { 
-    content: url('../img/icons/primary/hair.svg');
-}
+// .page-numbers li a{
+//   color: $secondary;
+//   background: transparent;
+// }
 
-.laser-hair-primary { 
-    content: url('../img/icons/primary/laser-hair.svg');
-}
-
-
-.face-skin-treatments-primary { 
-    content: url('../img/icons/primary/face-skin-treatments.svg');
-}
-
-.laser-lipo-primary { 
-    content: url('../img/icons/primary/laser-lipo.svg');
-}
-
-.nails-primary { 
-    content: url('../img/icons/primary/nails.svg');
-}
-
-.none-surgical-face-treatment-primary { 
-    content: url('../img/icons/primary/none-surgical-face-treatment.svg');
-}
-
-.skin-wax-primary { 
-    content: url('../img/icons/primary/wax.svg');
-}
-
-.massage-primary { 
-    content: url('../img/icons/primary/massage.svg');
-}
-
-.pregnant-primary { 
-    content: url('../img/icons/primary/pregnant.svg');
-}
-
-.icon-wrapper { 
-    max-width: 150px;
-}
-
-.page-numbers current {
-    font-weight: 800;
-    background: transparent;
-}
-
-.top-0 {
-    top: -1px;
-}
+// .opacity-gradient-primary {
+//    background: rgba(5, 35, 41, 0) linear-gradient(180deg, rgba(5, 35, 41, 0), $primary) repeat-x !important
+// }
 
 
-.bottom-0 {
-    bottom: -1px;
-}
+// .opacity-gradient-secondary {
+//    background: rgb(0,255,179);
+//    background: linear-gradient(159deg, rgba(0,255,179,1) 15%, rgba(0,164,255,1) 85%);
+// }
+
+// .opacity-gradient-content {
+//    background: rgba(255, 255, 255, 0) linear-gradient(180deg, rgba(255, 255, 255, 0), $content) repeat-x !important
+// }
+
+// .opacity-gradient-light {
+//    background: rgba(255, 255, 255, 0) linear-gradient(180deg, rgba(255, 255, 255, 0), $light) repeat-x !important
+// }
+
+// .bb-glow-primary { 
+//     content: url('../img/icons/primary/bb-glow.svg');
+// }
+
+// .cellulite-primary { 
+//     content: url('../img/icons/primary/cellulite.svg');
+// }
+
+// .eye-treatment-primary { 
+//     content: url('../img/icons/primary/eye-treatment.svg');
+// }
+
+// .face-cryolipolysis-primary { 
+//     content: url('../img/icons/primary/cryolipolysis.svg');
+// }
+
+// .skin-treatments-primary { 
+//     content: url('../img/icons/primary/face-skin-treatments.svg');
+// }
+
+// .massage-primary { 
+//     content: url('../img/icons/primary/face-profile.svg');
+// }
+
+// .hair-primary { 
+//     content: url('../img/icons/primary/hair.svg');
+// }
+
+// .laser-hair-primary { 
+//     content: url('../img/icons/primary/laser-hair.svg');
+// }
 
 
-.left-0 {
-    left: 0px;
-}
+// .face-skin-treatments-primary { 
+//     content: url('../img/icons/primary/face-skin-treatments.svg');
+// }
 
-.right-0 {
-    right: 0px;
-}
+// .laser-lipo-primary { 
+//     content: url('../img/icons/primary/laser-lipo.svg');
+// }
 
-.icon-fill {
-    fill: $ptitle;
-}
+// .nails-primary { 
+//     content: url('../img/icons/primary/nails.svg');
+// }
+
+// .none-surgical-face-treatment-primary { 
+//     content: url('../img/icons/primary/none-surgical-face-treatment.svg');
+// }
+
+// .skin-wax-primary { 
+//     content: url('../img/icons/primary/wax.svg');
+// }
+
+// .massage-primary { 
+//     content: url('../img/icons/primary/massage.svg');
+// }
+
+// .pregnant-primary { 
+//     content: url('../img/icons/primary/pregnant.svg');
+// }
+
+// .icon-wrapper { 
+//     max-width: 150px;
+// }
+
+// .page-numbers current {
+//     font-weight: 800;
+//     background: transparent;
+// }
+
+// .top-0 {
+//     top: -1px;
+// }
 
 
-.ease-in, .fill-secondary, .fill-primary {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
+// .bottom-0 {
+//     bottom: -1px;
+// }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
 
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
+// .left-0 {
+//     left: 0px;
+// }
 
-.sidebar-nav li a {
-    color: $light;
-    padding-left: 10px;
-}
+// .right-0 {
+//     right: 0px;
+// }
 
-.wp-spacer-sm{
-    height: 50px;
-    width:100%;
-    display: block;
-}
+// .icon-fill {
+//     fill: $ptitle;
+// }
 
-.wp-spacer-md{
-    height: 75px;
-    width:100%;
-    display: block;
-}
 
-.wp-spacer-lg{
-    height: 100px;
-    width:100%;
-    display: block;
-}
+// .ease-in, .fill-secondary, .fill-primary {
+//     -webkit-transition: all 0.5s ease;
+//     -moz-transition: all 0.5s ease;
+//     -o-transition: all 0.5s ease;
+//     transition: all 0.5s ease;
+// }
 
-.wp-spacer-xl{
-    height: 150px;
-    width:100%;
-    display: block;
-}
+// .video-responsive{
+//     overflow:hidden;
+//     padding-bottom:56.25%;
+//     position:relative;
+//     height:0;
+// }
+
+// .video-responsive iframe{
+//     left:0;
+//     top:0;
+//     height:100%;
+//     width:100%;
+//     position:absolute;
+// }
+
+// .sidebar-nav li a {
+//     color: $light;
+//     padding-left: 10px;
+// }
+
+// .wp-spacer-sm{
+//     height: 50px;
+//     width:100%;
+//     display: block;
+// }
+
+// .wp-spacer-md{
+//     height: 75px;
+//     width:100%;
+//     display: block;
+// }
+
+// .wp-spacer-lg{
+//     height: 100px;
+//     width:100%;
+//     display: block;
+// }
+
+// .wp-spacer-xl{
+//     height: 150px;
+//     width:100%;
+//     display: block;
+// }

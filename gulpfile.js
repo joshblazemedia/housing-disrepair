@@ -81,7 +81,7 @@ function browser_sync(){
       browserSync.init({
         injectChanges:true,
          dist: './',
-         proxy: "blazemedia.local/power8/"
+         proxy: "blazemedia.local/"
        /* https: {
             key: '',
             cert: ''

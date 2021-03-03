@@ -1,0 +1,57 @@
+.header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.top-navigation-lists {
+    margin-right: 3.5rem;
+    text-align: right;
+}
+
+.contact {
+    display: flex;
+    &__list {
+        margin-left: auto;
+        margin-bottom: 0;
+        display: flex;
+    }
+    &__item {
+        text-align: right;
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    &__link {
+        color: $text-light;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        color: $text-light;
+        text-decoration: none;
+        font-weight: bold;
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    &__link {
+        color: $text-light;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
