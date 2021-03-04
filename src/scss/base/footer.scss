@@ -1,0 +1,11 @@
+.footer {
+	padding: 5rem 0;
+
+	a {
+		color: $text-dark;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
