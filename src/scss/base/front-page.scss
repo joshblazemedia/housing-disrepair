@@ -1,6 +1,6 @@
 .jumbotron {
   height: 100vh;
-  min-height: 60rem;
+  min-height: 50rem;
   position: relative;
   z-index: 1;
   color: $text-light;
@@ -20,33 +20,65 @@
   }
 }
 
+.overlay {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    white 0%,
+    white 17%,
+    transparent 37%
+  );
+  border-radius: 40px;
+  &-text {
+    position: absolute;
+    color: $accent;
+    font-weight: bold;
+    font-size: 1.4rem;
+    left: 2.8rem;
+    bottom: 1.4rem;
+    z-index: 10;
+  }
+}
+
 .img-container {
   max-width: 40rem;
   border-radius: 40px;
   box-shadow: 0 7px 12px rgba(black, 0.16);
   margin: 0 auto;
-  position: relative;
-  & img {
-    border-radius: 40px;
-  }
+  overflow: hidden;
 
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .slide {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(
-      to top,
-      white 0%,
-      white 17%,
-      transparent 37%
-    );
-    border-radius: 40px;
+    position: relative;
+    & img {
+      border-radius: 40px;
+    }
+
+     &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to top,
+        white 0%,
+        white 17%,
+        transparent 37%
+      );
+      border-radius: 40px;
+    }
   }
-  .floating-text {
+  & .floating-text {
     position: absolute;
     color: $accent;
     font-weight: bold;
@@ -69,13 +101,13 @@
   z-index: -1;
 }
 
-.heading-small {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-}
+// .heading-small {
+//   margin-bottom: 0;
+//   font-size: 0.9rem;
+// }
 
 .heading-one {
-  font-size: 3.6rem;
+   @include font-size(2.2rem);
   letter-spacing: 1px;
   line-height: 1.4;
   font-family: "Open Sans";
@@ -99,7 +131,6 @@
 
 .content {
   line-height: 1.7;
-  font-size: 1.1rem;
   letter-spacing: 1px;
   margin-bottom: 2.7rem;
 }
@@ -114,6 +145,15 @@
     background-color: lighten($accent, 10%);
     color: $text-light;
   }
+}
+
+.round-img__wrapper {
+  width: 100%;
+  height: 100%;
+  // max-width: 36rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: orangered;
 }
 
 .about-us {

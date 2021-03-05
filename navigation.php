@@ -2,7 +2,7 @@
     <!-- LOGO -->
     <div class="logo">
         <a href="<?php echo get_home_url(); ?>" class="logo-link">
-            <img class="logo-img" src="<?php bloginfo('template_directory'); ?>/assets/images/logo/hwhd-white.svg" />
+            <img width="130" class="logo-img" src="<?php bloginfo('template_directory'); ?>/assets/images/logo/hwhd-white.svg" />
         </a>
     </div>
 

@@ -19,21 +19,21 @@
 	box-sizing: border-box;
 }
 
-html {
-	font-size: 100%;
-}
+// html {
+// 	font-size: 100%;
+// }
 
-@media only screen and (max-width: 1600px) { //2000px
-  html {
-  	font-size: 87.5%;
-  }
-}
+// @media only screen and (max-width: 1600px) { //2000px
+//   html {
+//   	font-size: 87.5%;
+//   }
+// }
 
-@media only screen and (max-width: 1200px) { //2000px
-  html {
-  	font-size: 75%;
-  }
-}
+// @media only screen and (max-width: 1200px) { //2000px
+//   html {
+//   	font-size: 75%;
+//   }
+// }
 
 body {
 	box-sizing: inherit;

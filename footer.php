@@ -1,3 +1,5 @@
+<?php wp_footer(); ?>
+
 </body>
 <footer class="footer bg-secondary">
 	<div class="container container-limiter">

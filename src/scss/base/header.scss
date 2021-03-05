@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 6rem;
+  padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,10 +9,6 @@
   left: 0;
   right: 0;
   z-index: 10;
-
-  .logo-img {
-    width: 10rem;
-  }
 }
 
 .top-navigation-lists {
@@ -37,7 +33,6 @@
     color: $text-light;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
   }
 }
 
@@ -49,7 +44,7 @@
   &__item {
     color: $text-light;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     &:not(:last-child) {

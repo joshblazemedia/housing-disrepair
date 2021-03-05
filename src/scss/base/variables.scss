@@ -10,14 +10,15 @@ $headings-font-family: 'gill-sans-nova', sans-serif, "HelveticaNeue-Bold", "Helv
 $headings-font-weight: 500;
 
 h1, h2, h3, h4, h5 {
-// font-weight: 500 !important;
+font-weight: 700 !important;
 font-style: normal !important;
-// margin-bottom: 1.5rem !important;
+margin-bottom: 1.5rem !important;
 }
 
 p {
-// font-style: normal !important;
-// margin-bottom: 1.5rem !important;
+font-style: normal !important;
+margin-bottom: 1.5rem !important;
+line-height: 1.7;
 }
 
 // Example usage:
@@ -28,6 +29,7 @@ $text-dark: #363636;
 $text-light: #FFFFFF;
 $accent: #BD2C88;
 $darker: #000000;
+$dark:  #363636;
 $back: #a9a9a9;
 $content: #ffffff;
 $success:#28a745;
@@ -49,6 +51,7 @@ $theme-colors: (
 "primary": $primary,
 "danger": $danger,
 "back": $back,
+"accent": $accent,
 "content": $content,
 "secondary": $secondary,
 "success": $success,
