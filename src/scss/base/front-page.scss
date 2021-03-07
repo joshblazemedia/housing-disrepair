@@ -1,23 +1,15 @@
-.jumbotron {
-  height: 100vh;
-  min-height: 50rem;
-  position: relative;
-  z-index: 1;
-  color: $text-light;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__background {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 98.5%;
-    height: 100%;
-    z-index: -1;
-  }
+.carousel-container {
+  overflow: hidden;
+  border-radius: 40px;
+  height: 100%;
+  min-height: 450px;
+  max-height: 500px;
+}
+
+.content {
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 .overlay {
@@ -31,10 +23,9 @@
   background-image: linear-gradient(
     to top,
     white 0%,
-    white 17%,
+    white 10%,
     transparent 37%
   );
-  border-radius: 40px;
   &-text {
     position: absolute;
     color: $accent;
@@ -46,53 +37,6 @@
   }
 }
 
-.img-container {
-  max-width: 40rem;
-  border-radius: 40px;
-  box-shadow: 0 7px 12px rgba(black, 0.16);
-  margin: 0 auto;
-  overflow: hidden;
-
-  .slide {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    & img {
-      border-radius: 40px;
-    }
-
-     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(
-        to top,
-        white 0%,
-        white 17%,
-        transparent 37%
-      );
-      border-radius: 40px;
-    }
-  }
-  & .floating-text {
-    position: absolute;
-    color: $accent;
-    font-weight: bold;
-    font-size: 1.4rem;
-    left: 2.8rem;
-    bottom: 1.4rem;
-    z-index: 10;
-  }
-}
-
-.container-limiter {
-  max-width: 1650px;
-}
-
 .banner-circle {
   position: absolute;
   width: 30rem;
@@ -101,67 +45,46 @@
   z-index: -1;
 }
 
-// .heading-small {
-//   margin-bottom: 0;
-//   font-size: 0.9rem;
+// .btn-main {
+//   background-color: $accent;
+//   color: $text-light;
+//   padding: 0.6rem 1.8rem;
+//   border-radius: 100px;
+//   font-size: 1.4rem;
+//   &:hover {
+//     background-color: lighten($accent, 10%);
+//     color: $text-light;
+//   }
 // }
 
-.heading-one {
-   @include font-size(2.2rem);
-  letter-spacing: 1px;
-  line-height: 1.4;
-  font-family: "Open Sans";
-  font-weight: 700;
-}
-
-.heading-two {
-  font-size: 2.6rem;
-  color: $accent;
-  line-height: 1.1;
-}
-
-.heading-two--light {
-  color: $text-light;
-}
-
-.heading-four {
-  color: $accent;
-  margin-bottom: 1rem;
-}
-
-.content {
-  line-height: 1.7;
-  letter-spacing: 1px;
-  margin-bottom: 2.7rem;
-}
-
-.btn-main {
-  background-color: $accent;
-  color: $text-light;
-  padding: 0.6rem 1.8rem;
-  border-radius: 100px;
-  font-size: 1.4rem;
-  &:hover {
-    background-color: lighten($accent, 10%);
-    color: $text-light;
-  }
-}
-
-.round-img__wrapper {
-  width: 100%;
-  height: 100%;
-  // max-width: 36rem;
+.round-image {
+  max-width: 30rem;
+  max-height: 30rem;
+  width: 37vw;
+  height: 37vw;
+  min-width: 285px;
+  min-height: 285px;
   border-radius: 50%;
   overflow: hidden;
-  background: orangered;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
+// .round-img__wrapper {
+//   width: 100%;
+//   height: 100%;
+//   // max-width: 36rem;
+//   border-radius: 50%;
+//   overflow: hidden;
+//   background: orangered;
+// }
+
 .about-us {
-  position: relative;
-  &__jpg {
-    max-width: 36rem;
-  }
-  &__svg-top {
+  &__svg--top {
     position: absolute;
     z-index: -1;
     top: 2.5rem;
@@ -170,80 +93,95 @@
       width: 12rem;
     }
   }
-
-  &__svg-bottom {
+  &__svg--bottom {
     position: absolute;
     z-index: -1;
     bottom: 4.5rem;
     right: 4.5rem;
     & img {
       width: 10rem;
-      height: 10rem;
     }
   }
 }
-
-.section-height {
-  padding: 10rem 0;
-}
-
 .services {
-  background-color: $secondary;
-  position: relative;
-  .people-png {
-    width: 80rem;
+  &__svg {
     position: absolute;
-    top: 2rem;
-    left: -20rem;
-  }
-  &__circle-svg {
-    position: absolute;
-    width: 16rem;
-    top: 50px;
-    left: 10rem;
-  }
-  &__plus-svg {
-    position: absolute;
+    z-index: -1;
     &--top {
-      width: 8.5rem;
-      top: 1.5rem;
-      left: 50%;
+      top: -6rem;
+      left: -6rem;
+      & img {
+        width: 8rem;
+      }
     }
     &--bottom {
-      width: 12rem;
-      left: 20%;
-      bottom: 2rem;
+      left: 25%;
+      right: 0;
+      bottom: 1rem;
+      & img {
+        width: 11rem;
+      }
     }
+    &--circle {
+      top: -35%;
+      left: -25%;
+      & img {
+        max-width: 200px;
+        min-width: 150px;
+        width: 30vw;
+      }
+    }
+  }
+  .people {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 60vw;
+    min-width: 400px;
+    max-width: 810px;
   }
 }
 
 .card {
-    background-color: $light;
-    padding: 3rem 2rem;
-    border-radius: 30px;
-    box-shadow: 0 7px 12px rgba(black, 0.16);
-    &__header,
-    &__body {
-      margin-bottom: 2rem;
-    }
-    &__title {
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    &__content--title {
-      color: $accent;
-      margin-bottom: 1rem;
-    }
-    &__content--text {
-      line-height: 1.7;
-      word-spacing: 1.5px;
-      font-size: 1.1rem;
-    }
+  background-color: $light;
+  padding: 3rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 7px 12px rgba(black, 0.16);
+  display: flex;
+  flex-direction: column;
+  // &__header,
+  // &__body {
+  //   // margin-bottom: 2rem;
+  // }
+  &__body {
+    padding: 2rem 0;
+  }
+  &__footer {
+    margin-top: auto;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  &__content--title {
+    color: $accent;
+    margin-bottom: 1rem;
+  }
+  &__content--text {
+    line-height: 1.7;
+    word-spacing: 1.5px;
+    font-size: 1.1rem;
+  }
 }
 
 .testimonial {
-  padding-top: 4rem;
-  background-image: linear-gradient(to top, $primary-dark, $primary);
+  background-image: linear-gradient(
+    to top,
+    $primary-dark 0%,
+    $primary-dark 15%,
+    $primary 57%
+  );
   & h2 {
     margin-bottom: 5rem;
   }
@@ -284,7 +222,7 @@
 
   &__svg-bottom {
     position: absolute;
-    z-index: -1; 
+    z-index: -1;
     top: 19rem;
     left: 1.5rem;
     & img {
@@ -306,7 +244,7 @@
     border: 0;
     border-radius: 20px;
   }
-   &__plus-svg {
+  &__plus-svg {
     position: absolute;
     z-index: -1;
     &--top {
@@ -324,5 +262,79 @@
 
 .cta {
   padding: 3rem 0;
-  background-image: linear-gradient(to right, $primary, #257FB7, #7425B7);
+  background-image: linear-gradient(to right, $primary, #257fb7, #7425b7);
+}
+
+// media queries
+@media only screen and (max-width: 1450px) {
+  .carousel-container {
+    max-height: 380px;
+  }
+  .display-3 {
+    font-size: 3.3rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .display-3 {
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mb-small {
+    margin-bottom: 3rem;
+  }
+  .center-small {
+    text-align: center;
+  }
+  .carousel-container {
+    max-width: 550px;
+    min-height: 320px;
+  }
+  .services {
+    &__svg {
+      &--bottom {
+        left: 70%;
+        & img {
+          width: 9rem;
+        }
+      }
+      &--circle {
+        top: 0;
+        left: -1rem;
+        & img {
+          max-width: 180px;
+        }
+      }
+    }
+    .people {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translateY(-50%) translateX(50%);
+      width: 60vw;
+      min-width: 400px;
+      max-width: 810px;
+    }
+  }
+  .card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  .carousel-container {
+    min-height: 250px;
+  }
 }

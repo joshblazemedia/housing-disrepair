@@ -4,301 +4,316 @@
 
 @import url("https://use.typekit.net/aoy1qwx.css");
 
-
-$headings-font-family: 'gill-sans-nova', sans-serif, "HelveticaNeue-Bold", "Helvetica Neue", sans-serif;
+$headings-font-family: "gill-sans-nova", sans-serif, "HelveticaNeue-Bold",
+  "Helvetica Neue", sans-serif;
 
 $headings-font-weight: 500;
 
-h1, h2, h3, h4, h5 {
-font-weight: 700 !important;
-font-style: normal !important;
-margin-bottom: 1.5rem !important;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700 !important;
+  font-style: normal !important;
+  margin-bottom: 1.5rem !important;
 }
 
 p {
-font-style: normal !important;
-margin-bottom: 1.5rem !important;
-line-height: 1.7;
+  font-style: normal !important;
+  margin-bottom: 2rem !important;
+  line-height: 1.7;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 // Example usage:
-$primary: #25B3B7;
+$primary: #25b3b7;
 $primary-dark: #078590;
-$secondary: #EDF2F2; 
+$secondary: #edf2f2;
 $text-dark: #363636;
-$text-light: #FFFFFF;
-$accent: #BD2C88;
+$text-light: #ffffff;
+$accent: #bd2c88;
 $darker: #000000;
-$dark:  #363636;
+$dark: #363636;
 $back: #a9a9a9;
 $content: #ffffff;
-$success:#28a745;
-$danger:#FF0000;
-$info:#9BCDFA;
-$warning:#ffc107;
-$light:#FFFFFF;
-$ptitle:#3d5c73;
+$success: #28a745;
+$danger: #ff0000;
+$info: #9bcdfa;
+$warning: #ffc107;
+$light: #ffffff;
+$ptitle: #3d5c73;
 $titletext: #000000;
 $form-input: #e4e4e4;
 $text: #ffffff;
 
-$enable-gradients:true;
+$enable-gradients: true;
 
 $spacer: 2.2rem;
 $btn-border-radius: 1.35rem;
 
-$theme-colors: ( 
-"primary": $primary,
-"danger": $danger,
-"back": $back,
-"accent": $accent,
-"content": $content,
-"secondary": $secondary,
-"success": $success,
-"info": $info,
-"warning": $warning,
-"light": $light,
-"dark": $dark,
-"titletext": $titletext,
-"form-input": $form-input,
-"ptitle" : $ptitle,
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "back": $back,
+  "accent": $accent,
+  "content": $content,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark,
+  "titletext": $titletext,
+  "form-input": $form-input,
+  "ptitle": $ptitle,
 );
 
 $headings-color: $primary;
 
-.radius-lg{
-    border-radius: 2rem;
+.radius-lg {
+  border-radius: 2rem;
 }
 
-body, #content {
-    color: $text;
-    font-size: 0.9rem;
-    line-height: 1.8;
-    font-weight: 300;
+body,
+#content {
+  color: $text;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  font-weight: 300;
 }
 
-.hover-block{
-    position: relative; 
-    top: 0px;
-    transition: all 0.3s ease 0.3s;
-    box-shadow: 0px 5px 10px -5px rgba(108,110,135,0.4) !important;
-&:hover {
+.hover-block {
+  position: relative;
+  top: 0px;
+  transition: all 0.3s ease 0.3s;
+  box-shadow: 0px 5px 10px -5px rgba(108, 110, 135, 0.4) !important;
+  &:hover {
     top: -20px;
-    box-shadow: 0px 50px 30px -20px rgba(108,110,135,0.3) !important;
-    }
+    box-shadow: 0px 50px 30px -20px rgba(108, 110, 135, 0.3) !important;
+  }
 }
-
 
 ul li {
-    margin: 4px;
-    // margin-left: 20px;
+  margin: 4px;
+  // margin-left: 20px;
 }
 
-
 ul li:first-letter {
-    // margin-bottom: 8px;
-    text-transform: capitalize;
+  // margin-bottom: 8px;
+  text-transform: capitalize;
 }
 
 .z-index-100 {
-    z-index: 100;
-    position: relative;
+  z-index: 100;
+  position: relative;
 }
 
-.fill-primary{
-    fill: $primary;
+.fill-primary {
+  fill: $primary;
 }
 
-.fill-secondary{
-    fill: $secondary;
+.fill-secondary {
+  fill: $secondary;
 }
 
-.fill-content{
-    fill: $content;
+.fill-content {
+  fill: $content;
 }
 
 a {
- color: $ptitle;   
+  color: $ptitle;
 }
 
 .page-numbers {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background: $light;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: $light;
 }
 
-.page-numbers li{
+.page-numbers li {
   padding: 1rem;
 }
 
-.page-numbers li:hover{
+.page-numbers li:hover {
   background: $primary;
 }
 
-.page-numbers li a{
+.page-numbers li a {
   color: $secondary;
   background: transparent;
 }
 
 .opacity-gradient-primary {
-   background: rgba(5, 35, 41, 0) linear-gradient(180deg, rgba(5, 35, 41, 0), $primary) repeat-x !important
+  background: rgba(5, 35, 41, 0)
+    linear-gradient(180deg, rgba(5, 35, 41, 0), $primary) repeat-x !important;
 }
 
-
 .opacity-gradient-secondary {
-   background: rgb(0,255,179);
-   background: linear-gradient(159deg, rgba(0,255,179,1) 15%, rgba(0,164,255,1) 85%);
+  background: rgb(0, 255, 179);
+  background: linear-gradient(
+    159deg,
+    rgba(0, 255, 179, 1) 15%,
+    rgba(0, 164, 255, 1) 85%
+  );
 }
 
 .opacity-gradient-content {
-   background: rgba(255, 255, 255, 0) linear-gradient(180deg, rgba(255, 255, 255, 0), $content) repeat-x !important
+  background: rgba(255, 255, 255, 0)
+    linear-gradient(180deg, rgba(255, 255, 255, 0), $content) repeat-x !important;
 }
 
 .opacity-gradient-light {
-   background: rgba(255, 255, 255, 0) linear-gradient(180deg, rgba(255, 255, 255, 0), $light) repeat-x !important
+  background: rgba(255, 255, 255, 0)
+    linear-gradient(180deg, rgba(255, 255, 255, 0), $light) repeat-x !important;
 }
 
-.bb-glow-primary { 
-    content: url('../img/icons/primary/bb-glow.svg');
+.bb-glow-primary {
+  content: url("../img/icons/primary/bb-glow.svg");
 }
 
-.cellulite-primary { 
-    content: url('../img/icons/primary/cellulite.svg');
+.cellulite-primary {
+  content: url("../img/icons/primary/cellulite.svg");
 }
 
-.eye-treatment-primary { 
-    content: url('../img/icons/primary/eye-treatment.svg');
+.eye-treatment-primary {
+  content: url("../img/icons/primary/eye-treatment.svg");
 }
 
-.face-cryolipolysis-primary { 
-    content: url('../img/icons/primary/cryolipolysis.svg');
+.face-cryolipolysis-primary {
+  content: url("../img/icons/primary/cryolipolysis.svg");
 }
 
-.skin-treatments-primary { 
-    content: url('../img/icons/primary/face-skin-treatments.svg');
+.skin-treatments-primary {
+  content: url("../img/icons/primary/face-skin-treatments.svg");
 }
 
-.massage-primary { 
-    content: url('../img/icons/primary/face-profile.svg');
+.massage-primary {
+  content: url("../img/icons/primary/face-profile.svg");
 }
 
-.hair-primary { 
-    content: url('../img/icons/primary/hair.svg');
+.hair-primary {
+  content: url("../img/icons/primary/hair.svg");
 }
 
-.laser-hair-primary { 
-    content: url('../img/icons/primary/laser-hair.svg');
+.laser-hair-primary {
+  content: url("../img/icons/primary/laser-hair.svg");
 }
 
-
-.face-skin-treatments-primary { 
-    content: url('../img/icons/primary/face-skin-treatments.svg');
+.face-skin-treatments-primary {
+  content: url("../img/icons/primary/face-skin-treatments.svg");
 }
 
-.laser-lipo-primary { 
-    content: url('../img/icons/primary/laser-lipo.svg');
+.laser-lipo-primary {
+  content: url("../img/icons/primary/laser-lipo.svg");
 }
 
-.nails-primary { 
-    content: url('../img/icons/primary/nails.svg');
+.nails-primary {
+  content: url("../img/icons/primary/nails.svg");
 }
 
-.none-surgical-face-treatment-primary { 
-    content: url('../img/icons/primary/none-surgical-face-treatment.svg');
+.none-surgical-face-treatment-primary {
+  content: url("../img/icons/primary/none-surgical-face-treatment.svg");
 }
 
-.skin-wax-primary { 
-    content: url('../img/icons/primary/wax.svg');
+.skin-wax-primary {
+  content: url("../img/icons/primary/wax.svg");
 }
 
-.massage-primary { 
-    content: url('../img/icons/primary/massage.svg');
+.massage-primary {
+  content: url("../img/icons/primary/massage.svg");
 }
 
-.pregnant-primary { 
-    content: url('../img/icons/primary/pregnant.svg');
+.pregnant-primary {
+  content: url("../img/icons/primary/pregnant.svg");
 }
 
-.icon-wrapper { 
-    max-width: 150px;
+.icon-wrapper {
+  max-width: 150px;
 }
 
 .page-numbers current {
-    font-weight: 800;
-    background: transparent;
+  font-weight: 800;
+  background: transparent;
 }
 
 .top-0 {
-    top: -1px;
+  top: -1px;
 }
-
 
 .bottom-0 {
-    bottom: -1px;
+  bottom: -1px;
 }
 
-
 .left-0 {
-    left: 0px;
+  left: 0px;
 }
 
 .right-0 {
-    right: 0px;
+  right: 0px;
 }
 
 .icon-fill {
-    fill: $ptitle;
+  fill: $ptitle;
 }
 
-
-.ease-in, .fill-secondary, .fill-primary {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+.ease-in,
+.fill-secondary,
+.fill-primary {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .sidebar-nav li a {
-    color: $light;
-    padding-left: 10px;
+  color: $light;
+  padding-left: 10px;
 }
 
-.wp-spacer-sm{
-    height: 50px;
-    width:100%;
-    display: block;
+.wp-spacer-sm {
+  height: 50px;
+  width: 100%;
+  display: block;
 }
 
-.wp-spacer-md{
-    height: 75px;
-    width:100%;
-    display: block;
+.wp-spacer-md {
+  height: 75px;
+  width: 100%;
+  display: block;
 }
 
-.wp-spacer-lg{
-    height: 100px;
-    width:100%;
-    display: block;
+.wp-spacer-lg {
+  height: 100px;
+  width: 100%;
+  display: block;
 }
 
-.wp-spacer-xl{
-    height: 150px;
-    width:100%;
-    display: block;
+.wp-spacer-xl {
+  height: 150px;
+  width: 100%;
+  display: block;
 }
