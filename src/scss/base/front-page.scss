@@ -1,3 +1,7 @@
+.banner {
+  z-index: 1;
+}
+
 .carousel-container {
   overflow: hidden;
   border-radius: 40px;
@@ -9,7 +13,7 @@
 .content {
   line-height: 1.7;
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .overlay {
@@ -39,23 +43,13 @@
 
 .banner-circle {
   position: absolute;
-  width: 30rem;
   top: -100px;
-  left: -130px;
+  left: -150px;
   z-index: -1;
+  & img {
+    width: 30rem;
+  }
 }
-
-// .btn-main {
-//   background-color: $accent;
-//   color: $text-light;
-//   padding: 0.6rem 1.8rem;
-//   border-radius: 100px;
-//   font-size: 1.4rem;
-//   &:hover {
-//     background-color: lighten($accent, 10%);
-//     color: $text-light;
-//   }
-// }
 
 .round-image {
   max-width: 30rem;
@@ -73,15 +67,6 @@
     object-position: center;
   }
 }
-
-// .round-img__wrapper {
-//   width: 100%;
-//   height: 100%;
-//   // max-width: 36rem;
-//   border-radius: 50%;
-//   overflow: hidden;
-//   background: orangered;
-// }
 
 .about-us {
   &__svg--top {
@@ -150,10 +135,7 @@
   box-shadow: 0 7px 12px rgba(black, 0.16);
   display: flex;
   flex-direction: column;
-  // &__header,
-  // &__body {
-  //   // margin-bottom: 2rem;
-  // }
+
   &__body {
     padding: 2rem 0;
   }
@@ -164,14 +146,8 @@
     font-weight: bold;
     font-size: 1.1rem;
   }
-  &__content--title {
-    color: $accent;
-    margin-bottom: 1rem;
-  }
-  &__content--text {
-    line-height: 1.7;
-    word-spacing: 1.5px;
-    font-size: 1.1rem;
+  &__content {
+    font-size: .95rem;
   }
 }
 
@@ -182,80 +158,53 @@
     $primary-dark 15%,
     $primary 57%
   );
-  & h2 {
-    margin-bottom: 5rem;
-  }
-  &__card {
-    background-color: $light;
-    padding: 2rem;
-    border-radius: 30px;
-    box-shadow: 0 7px 12px rgba(black, 0.16);
-  }
-  &__content {
-    padding: 4rem 0;
-    line-height: 1.7;
-    word-spacing: 1.5px;
-  }
-  &__author {
-    color: $accent;
-    font-weight: bold;
-    text-align: left;
-    margin-top: auto;
-  }
 }
 
 .blog {
   position: relative;
-  &__jpg {
-    max-width: 36rem;
-  }
-  &__svg-top {
+  &__svg {
     position: absolute;
     z-index: -1;
-    top: 2.5rem;
-    right: 3.5rem;
-    & img {
-      width: 12rem;
-      height: 12rem;
+    &--bottom {
+      bottom: 1.5rem;
+      right: 2.5rem;
+      & img {
+        width: 12rem;
+        height: 12rem;
+      }
     }
-  }
-
-  &__svg-bottom {
-    position: absolute;
-    z-index: -1;
-    top: 19rem;
-    left: 1.5rem;
-    & img {
-      width: 10rem;
-      height: 10rem;
+    &--top {
+       top: 19rem;
+      left: 1.5rem;
+      & img {
+        width: 10rem;
+        height: 10rem;
+      }
     }
   }
 }
 
 .how-to {
-  padding-top: 4rem;
   position: relative;
   z-index: 1;
-  .sub-title {
-    font-weight: 500;
-    margin-bottom: 5rem;
-  }
-  &__card {
-    border: 0;
-    border-radius: 20px;
-  }
-  &__plus-svg {
+  &__svg {
     position: absolute;
     z-index: -1;
-    &--top {
-      width: 8.5rem;
-      top: 2rem;
-      left: 6rem;
-    }
     &--bottom {
-      width: 8.5rem;
       right: 4rem;
       bottom: 4rem;
+      & img {
+        width: 8.5rem;
+        height: 8.5rem;
+      }
+    }
+    &--top {
+       top: 2rem;
+      left: 6rem;
+      & img {
+        width: 8.5rem;
+        height: 8.5rem;
+      }
     }
   }
 }
@@ -325,6 +274,11 @@
     max-width: 300px;
     margin: 0 auto;
   }
+  .banner-circle {
+    & img {
+      width: 25rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -336,5 +290,12 @@
   }
   .carousel-container {
     min-height: 250px;
+  }
+  .banner-circle {
+    top: -50px;
+    left: -95px;
+    & img {
+      width: 15rem;
+    }
   }
 }
